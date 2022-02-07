@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE CROP APPLICATION</title>
+    <script src="https://kit.fontawesome.com/314e866590.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="myHeader">
+        <div class="menu-btn">
+            <span class="menu-btn_hamburger"></span>
+        </div>
+
+        <nav class="nav">
+            <div class="logo-div" ><a href="../index.html"><img src="images/logo.png" alt=""></a></div>
+            <span id="logoName">SPACE CROP APPLICATION</span>
+            
+            <ui class="menu-nav">
+                <li class="menu-nav_item" active>
+                    <a href="about2.html" class="menu-nav_link">Research Chair</a>
+                </li>
+                <li class="menu-nav_item">
+                    <a href="team.html" class="menu-nav_link">Team Egerton</a>
+                </li>
+                <li class="menu-nav_item">
+                    <a href="register.html" class="menu-nav_link">Log Out</a>
+                </li>
+            </ui>
+        </nav>
+    </header>
+
+    <section class="save">
+        <div class="myMap">
+            <img src="images/map5.jpg" alt="">
+        </div>
+
+        <div class="inner">
+            <h4>Export Your ROI</h4>
+
+            <div class="options">
+                <p onclick="myDrop1()">Page Size &nbsp;&nbsp;&nbsp;<span>A4</span> <i class="fas fa-angle-right"></i></p>
+                <p onclick="myDrop2()">Orientation &nbsp;&nbsp;&nbsp;<span>Portrait</span> <i class="fas fa-angle-right"></i></p>
+                <p onclick="myDrop3()">DPI &nbsp;&nbsp;&nbsp;<span>300</span> <i class="fas fa-angle-right"></i></p>
+                <p onclick="myDrop4()">Format &nbsp;&nbsp;&nbsp;<span>svg</span> <i class="fas fa-angle-right"></i></p>
+            </div>
+
+            <div class="drop1" id="drop1">
+                <p>A4</p>
+                <p>A6</p>
+            </div>
+
+            <div class="drop2" id="drop2">
+                <p>Portrait</p>
+                <p>Landscape</p>
+            </div>
+
+            <div class="drop3" id="drop3">
+                <p>300</p>
+                <p>400</p>
+            </div>
+
+            <div class="drop4" id="drop4">
+                <p>svg</p>
+                <p>png</p>
+            </div>
+
+            <button>Download</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-info">
+            <div class="div-one">
+                <h6>USEFUL LINKS</h6>
+                <a href="index.html">Home</a>
+                <a href="about2.html">Research Chair</a>
+                <a href="team.html">Team Egerton</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="div-one">
+                <h6>SOCIAL MEDIA</h6>
+                    <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+            </div>
+        </div>
+        <p>&copy; Copyright 2022 Egerton Space Crop</p>
+    </footer>
+
+    <script src="js/save.js"></script>
+</body>
+</html>

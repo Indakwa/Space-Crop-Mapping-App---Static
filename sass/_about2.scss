@@ -1,0 +1,174 @@
+.about2{
+   
+
+    .text{
+        width: 90%;
+        margin: 0 auto;
+        min-height: 200px;
+        border: 1px solid $green4;
+        border-radius: 20px;
+        background: rgba(204, 204, 204, 0.047);
+        font-family: $header;
+        color: $green2;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .content{
+        width: 90%;
+        margin: 0 auto;
+        min-height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+        
+        .content1{
+            width: 33.33%;
+            background: #ccc;
+
+            h4{
+                position: relative;
+                font-family: $header;
+                letter-spacing: 1px;
+                top: 1.5rem;
+                left: 2rem;
+                background: $green4;
+                display: inline;
+                padding: 0.5rem 1rem;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            a{
+                position: relative;
+                display: inline-block;
+                color: $green4;
+                padding: 0.5rem;
+                left: 12rem;
+                top: 3rem;
+                font-family: $header;
+                letter-spacing: 1px;
+
+                &:hover{
+                    color: $green3;
+                }
+
+            }
+
+            p{
+                margin-top: 2.5rem;
+                padding: 0 1rem 0 1rem;
+                font-family: $sub-header;
+                letter-spacing: 1px;
+                font-size: 1.1rem;
+            }
+
+            .forLogo{
+                position: relative;
+                top: -6%;
+                left: 5%;
+                width: 150px;
+                height: 150px;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+        .content2{
+            width: 33.33%;
+            background: url(../images/1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+
+            p{
+                position: absolute;
+                bottom: 23%;
+                left: 25%;
+                color: white;
+                font-family: $sub-header;
+                letter-spacing: 1px;
+                background: rgba(0, 0, 0, 0.519);
+                display: inline-block;
+                padding: 0.5rem 1rem;
+            }
+
+            a{
+                display: inline-block;
+                background: $brown;
+                padding: 0.5rem 1rem;
+                color: white;
+                text-decoration: none;
+                letter-spacing: 1px;
+                font-family: $header;
+                border-radius: 10px;
+                position: absolute;
+                bottom: 10%;
+                left: 33%;
+                transition: 0.5s;
+
+                &:hover{
+                    background: #9b6134;
+                }
+
+            }
+        }
+        .content3{
+            width: 33.33%;
+            background: #ccc;
+
+            h4{
+                position: relative;
+                font-family: $header;
+                letter-spacing: 1px;
+                top: 1.5rem;
+                left: 2rem;
+                background: $green4;
+                display: inline;
+                padding: 0.5rem 1rem;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            a{
+                position: relative;
+                display: inline-block;
+                color: $green4;
+                padding: 0.5rem;
+                left: 12rem;
+                top: 3rem;
+                font-family: $header;
+                letter-spacing: 1px;
+
+                &:hover{
+                    color: $green3;
+                }
+
+            }
+
+            p{
+                margin-top: 2.5rem;
+                padding: 0 1rem 0 1rem;
+                font-family: $sub-header;
+                letter-spacing: 1px;
+                font-size: 1.1rem;
+            }
+
+            .forLogo{
+                position: relative;
+                top: -6%;
+                left: 5%;
+                width: 150px;
+                height: 150px;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

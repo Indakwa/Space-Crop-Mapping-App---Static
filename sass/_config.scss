@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat+Alternates&family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+$brown: #80461b;
+$green: #39ff14;
+$green2: #004225;
+$green3: #4ba392;
+$gray: #8c92ac;
+$green4: #4e6855;
+
+$header: 'Poppins', sans-serif;
+$sub-header: 'Lato', sans-serif;
+$text: 'Montserrat Alternates', sans-serif;
+

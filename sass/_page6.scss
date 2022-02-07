@@ -1,0 +1,252 @@
+.page6-section{
+    height: 630px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    
+    .section1{
+        width: 40%;
+
+        h4{
+            font-family: $sub-header;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 0rem 0 1rem 0;
+        }
+
+        img{
+            display: block;
+            width: 98%;
+            height: 300px;
+            //height: 570px;
+            margin: 0 auto;
+        }
+
+        .text{
+            height: 100px;
+            width: 98%;
+            margin: 0 auto;
+            background: rgba(204, 204, 204, 0.329);
+            padding: 1rem;
+            font-family: $header;
+            //margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        form{
+            text-align: center;
+
+            input[type=radio]{
+                cursor: pointer;
+            }
+
+            label{
+                font-family: $sub-header;
+                font-size: 1.2rem;
+                cursor: pointer;
+                margin: 1rem 3rem 1rem 0;
+            }
+        }
+        .result{
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .res-txt{
+                display: inline-block;
+                height: 95%;
+                font-family: $header;
+                font-size: 1.3rem;
+                padding: 1rem;
+                border: 1px solid $green4;
+                border-right: none;
+            }
+            .res-box{
+                position: relative;
+                display: inline-block;
+                border: 1px solid $green4;
+                width: 150px;
+                height: 95%;
+                padding: 1rem;
+                font-family: $sub-header;
+                font-size: 1.3rem;
+                overflow: hidden;
+
+                .units{
+                    position: absolute;
+                    margin-left: 1rem;
+                    font-family: $header;
+                    font-size: 1.2rem;
+                    color: $green3;
+                }
+            }
+            #save{
+                position: relative;
+                height: 95%;
+                width: 70px;
+
+                #saveText{
+                    color: $green3;
+                    position: absolute;
+                    left: .8rem;
+                    top: 0;
+                    font-family: $header;
+                }
+                
+                i{
+                    position: absolute;
+                    top: 1.3rem;
+                    left: 1rem;
+                    font-size: 2rem;
+                    color: black;
+                }
+            }
+        }
+    }
+    .section2{
+        border: 3px solid $gray;
+        width: 60%;
+        position: relative;
+
+        .map{
+            
+            img{
+                margin: 0 auto;
+                display: block;
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+        form{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            input[type=text] {
+                padding: 6px;
+                margin-top: 8px;
+                font-size: 17px;
+                border: 1px solid #333;
+                border-right: none;
+                background: #ddd;
+            }
+            button {
+                float: right;
+                padding: 6px 10px;
+                margin-top: 8px;
+                margin-right: 16px;
+                background: #ddd;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+                border: 1px solid #333;
+                border-left: none;
+
+                &:hover {
+                    background: #ccc;
+                  }
+                  
+            }
+
+        }
+
+        .icons{
+            top: 30%;
+            right: 0;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+
+            
+            i{
+                border: 1px solid $gray;
+                color: $gray;
+                font-size: 1.5rem;
+                padding: .6rem;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .settings{
+            bottom: 0rem;
+            right: 0;
+            position: absolute; 
+
+            i{
+                color: $gray;
+                font-size: 1.5rem;
+                padding: .6rem;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .myDropdown{
+            display: none;
+            bottom: 2rem;
+            right: 2rem;
+            position: absolute; 
+            font-family: $sub-header;
+            cursor: pointer;
+            background: #fff;
+
+            p{
+                border: 1px solid $gray;
+                color: $gray;
+                padding: .5rem .9rem;
+            }
+
+        }
+        .dropdown2{
+            display: none;
+            bottom: 2.4rem;
+            right: 6.5rem;
+            position: absolute; 
+            font-family: $sub-header;
+            cursor: pointer;
+            background: #fff;
+
+            p{
+                border: 1px solid $gray;
+                color: $gray;
+                padding: .5rem .9rem;
+            }
+        }
+
+        .dropdown3{
+            display: none;
+            bottom: 2.4rem;
+            right: 6.5rem;
+            position: absolute; 
+            font-family: $sub-header;
+            cursor: pointer;
+            background: #fff;
+
+            p{
+                border: 1px solid $gray;
+                color: $gray;
+                padding: .5rem .9rem;
+            }
+        }
+
+        .show{
+            display: block;
+        }
+        
+    }
+}

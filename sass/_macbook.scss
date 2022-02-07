@@ -1,0 +1,261 @@
+@media only screen and (min-width: 1271px) and (max-width: 1500px){
+
+    .contact-banner{
+    
+        .bg{
+            
+            .contact{
+                width: 92%;          
+            }
+        }
+    
+    
+    }
+
+    .about-page{
+    
+    
+        h2{
+            font-size: 2rem;
+    
+        }
+    
+        .container{
+    
+            .content1{
+                margin-top: 5rem;
+
+            }
+            .content2{
+    
+                .text{
+                    border-left: 60px solid $green3;
+                }
+            }
+        }
+    
+    }
+
+    .about2{
+
+        .content{
+
+            .content2{
+    
+                p{
+                    bottom: 23%;
+                    left: 20%;
+                }
+    
+                a{
+                    bottom: 10%;
+                    left: 30%;
+                }
+            }
+        }
+    }
+
+    .mySection{
+        
+        .section1{
+    
+            .result{
+                min-height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+    
+                #txt{
+                   
+                    display: inline-block;
+                    height: 95%;
+                    font-family: $header;
+                    font-size: 1rem;
+                    padding: 1rem .5rem .5rem .5rem;
+                    border: 1px solid $green4;
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+
+    .homepage{
+
+            
+            .carousel-container{
+                position: relative;
+                display: flex;
+            //padding-bottom: 3rem;
+                height: 800px;
+            }
+            
+            
+            #content1{
+                width: 30%;
+                //height: 120%;
+            
+                .text{
+                    padding: 1.5rem;
+                    position: relative;
+                    top: 5%;
+                    margin-left: 2rem;
+                    //right: -1rem;
+                    z-index: 2;
+                    width: 100%;
+                    height: 710px;
+                    background: #ccc;
+                    border-radius: 20px;
+            
+                    h3{
+                        font-family: $sub-header;
+                        font-size: 1rem;
+                        letter-spacing: 2px;
+                        word-spacing: normal;
+                        color: rgb(255, 255, 255);
+                    }
+                    p{
+                        padding-top: 1rem;
+                        font-family: $header;
+                        font-size: 1.3rem;
+                        letter-spacing: 1px;
+                        font-weight: 200;
+                    }
+                    .cta{
+                        display: block;
+                        width: 40%;
+                        padding: 0.7rem 1.3rem;
+                        border: 2px solid $green3;
+                        border-radius: 25px;
+                        font-family: $header;
+                        text-decoration: none;
+                        background: $green3;
+                        color: $green2;
+                        text-align: center;
+                        margin-top: 2rem;
+                        margin-left: 6rem;
+                        transition: 0.5s;
+            
+                        &:hover{
+                            color: rgba(255, 255, 255, 0.664);
+                        }
+                    }
+                }
+            }
+            
+            #content2 {
+                position: relative;
+                width: 70%;
+                //height: 105%;
+                //background-color: rgb(232, 232, 232);
+            // right: -1.3rem;
+            
+            }
+            
+            
+            
+            .carousel-content2 {
+                position: relative;
+                width: 100%;
+                height: 105%;
+                overflow: hidden;
+                top: -15%;
+                right: 0px;
+            
+                h2{
+                    position: absolute;
+                    top: 15%;
+                    left: 30%;
+                    font-family: $sub-header;
+                    letter-spacing: 1px;
+                    font-size: 1.8rem;
+                    color: $green3;
+                }
+                p{
+                    position: absolute;
+                    top: 20%;
+                    left: 14%;
+                    font-family: $sub-header;
+                    letter-spacing: 1px;
+                    font-size: 1.8rem;
+                    color: $green3;
+                }
+            }
+            
+            .box {
+                position: absolute;
+                width: 170px;
+                height: 170px;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: none;
+                top: 0px;
+                left: 0px;
+                box-shadow: 0 0 50px rgb(49, 49, 49);
+            }
+            
+
+            
+            #prev{
+                position: absolute;
+                top: 45%;
+                cursor: pointer;
+                color: $gray;
+                left: 8%;
+                font-size: 2rem;
+                transition: 1s;
+            
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            #next{
+                position: absolute;
+                top: 45%;
+                cursor: pointer;
+                color: $gray;
+                right: 1%;
+                font-size: 2rem;
+                transition: 1s;
+            
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+    }
+
+    .page5{
+
+        .content{
+            height: 320px;
+            width: 100%;
+            flex-wrap: nowrap;
+            padding-bottom: 3rem;
+    
+            .avatar{
+                margin-left: 3rem;
+
+                p{
+                    font-family: $header;
+                    margin: .2rem 0 0  2.7rem;
+    
+                }
+            }
+            .text{
+                padding: 1.5rem;
+                width: 76%;
+                height: auto;
+                margin-right: 2rem;
+            }
+        }
+    
+        h3{
+            margin: 0rem 0 1.5rem 0;
+            font-size: 1.5rem;
+        }
+
+    }
+}

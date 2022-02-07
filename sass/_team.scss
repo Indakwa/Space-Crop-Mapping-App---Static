@@ -1,0 +1,77 @@
+.team-section{
+    margin-top: -3rem;
+    background: #e0e0e0;
+
+    .header{
+        font-family: $sub-header;
+        font-size: 4rem;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .myContainer{
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+        padding: 4rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            border: 2px solid $green3;
+            width: 250px;
+            height: 330px;
+            padding: 1.4rem;
+            border-radius: 20px;
+            margin: 3rem 3rem;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    
+
+            .img{
+                width: 200px;
+                height: 200px;
+
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 5px solid $green3;
+                }
+            }
+            .name{
+                padding-top: 0.3rem;
+                font-family: $header;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                color: $green4;
+                text-align: center;
+            }
+            .title{
+                padding-top: 0.3rem;
+                color: $green4;
+                font-family: $sub-header;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .social-icons{
+                padding-top: 0.3rem;
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+                margin: 0 auto;
+
+                i{
+                    font-size: 1.1rem;
+                    color: $green3;
+                }
+            }
+        }
+    }
+}

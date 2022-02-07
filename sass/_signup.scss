@@ -1,0 +1,131 @@
+.signup{
+    position: relative;
+    height: 680px;
+    margin-top: -2rem;
+    z-index: 2;
+    background: url(../images/4.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .signup-content{
+        height: 100%;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(48deg, rgba(0,0,0,0.6558998599439776) 47%, rgba(0,0,0,1) 100%);
+        border: 3px solid rgba(0, 128, 0, 0);
+
+        h3{
+            font-family: $sub-header;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            margin: 4rem 0 1rem 0;
+        }
+        hr{
+            height: 5px;
+            width: 25%;
+            margin: 0 auto;
+            background: #fff;
+            color: #fff;
+        }
+        .myText{
+            font-family: $sub-header;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 1.9rem;
+            color: white;
+            margin: 1rem 0 1rem 0;
+        }
+
+       .inner-section{
+           display: flex;
+           justify-content: space-between;
+           width: 55%;
+           margin: 0 auto;
+
+        form{
+            width: 50%;
+            padding-left: 3rem;
+
+            ::placeholder { 
+                color: white;
+                opacity: 1; 
+              }
+
+
+            input{
+                width: 80%;
+                display: block;
+                background: none;
+                padding: 12px 20px;
+                border: none;
+                border-bottom: 2px solid white;
+                outline: none;
+                color: white;
+                font-size: 1.1rem;
+                font-family: $sub-header;
+                margin: 2rem;
+            }
+
+            input[type=submit]{
+                font-family: $header;
+                color: black;
+                border: 2px solid white;
+                background: rgba(255, 255, 255, 0.658);
+                border-radius: 10px;
+                cursor: pointer;
+                transition: .5s;
+                font-size: 1.1rem;
+
+                &:hover{
+                    background: #fff;
+                }
+            }
+        }
+
+        .social-media{
+            padding-top: 2rem;
+
+            a{
+                display: block;
+                color: $green3;
+                text-decoration: none;
+                font-family: $header;
+                font-size: 1.1rem;
+                padding: 1rem 1.5rem;
+                border-radius: 7px;
+                margin: 2rem;
+                text-align: center;
+                transition: .5s;
+            }
+            #fb{
+                background: rgba(255, 255, 255, 0.815);
+
+                &:hover{
+                    background: rgba(255, 255, 255, 0.915);
+                    transform: scale(1.1);
+                }
+            }
+            #google{
+                background: rgba(0, 0, 0, 0.829);
+
+                &:hover{
+                    background: rgba(0, 0, 0, 0.929);
+                    transform: scale(1.1);
+                }
+            }
+            #email{
+                background: $green3;
+                color: white;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+       }
+    }
+}

@@ -1,0 +1,72 @@
+.banner{
+    position: relative;
+    height: 90vh;
+    margin-top: -2rem;
+    z-index: 2;
+    background: url(../images/4.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .mycontent{
+        height: 100%;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(48deg, rgba(0,0,0,0.6558998599439776) 47%, rgba(0,0,0,1) 100%);
+        border: 3px solid rgba(0, 128, 0, 0);
+
+        h3{
+            font-family: $sub-header;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            margin: 7rem 0 1rem 0;
+        }
+        hr{
+            height: 5px;
+            width: 70%;
+            margin: 0 auto;
+            background: #fff;
+            color: #fff;
+        }
+        .myText{
+            font-family: $sub-header;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 1.9rem;
+            color: white;
+            margin: 1rem 0 1rem 0;
+        }
+
+        .btns{
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                font-family: $sub-header;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+                border-radius: 10px;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            .register-btn{
+                background: rgba(0, 0, 0, 0.753);
+                margin-left: -2rem;
+            }
+            .login-btn{
+                background: $green3;
+            }
+        }
+    }
+}

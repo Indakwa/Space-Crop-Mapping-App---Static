@@ -1,0 +1,264 @@
+.myHeader{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+    top: 0;
+    font-family: $text;
+    letter-spacing: 1px;
+}
+
+.logo-div{
+    position: absolute;
+    top: .4rem;
+    left: 1rem;
+
+    img{
+        height: 70px;
+    }
+}
+#logoName{
+    display: none;
+}
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color){
+    @if(lightness($color) > 40%){
+        @return #000;
+    }@else{
+        @return #fff;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1400px){
+        @content;
+    }
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 10;
+    right: 2rem;
+    top: 2rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+
+    &_hamburger{
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: $green2;
+        @include transition-ease;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;       
+            height: 3px;
+            background: $green2;
+            @include transition-ease;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: $green2;
+            @include transition-ease;
+        }
+
+        &.open{
+            transform: rotate(720deg);
+            background: transparent;
+
+            &::before{
+                transform: rotate(45deg) translate(5px, 8px);
+                background: #fff;
+            }
+
+            &::after{
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+                background: #fff;
+            }
+        }
+    }
+}
+
+.nav{
+    position: relative;
+    top: 0;
+    left: -1rem;
+    width: 100vw;
+
+    opacity: 1;
+   // visibility: hidden;
+    z-index: 5;
+
+    &.open{
+        visibility: visible;
+    }
+
+    .menu-nav{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 105vh;
+        overflow: hidden;
+        background: #333;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-105%);
+        @include transition-ease;
+
+        &.open{
+            transform: translateY(-5%);
+        }
+
+        &_item{
+            transform: translateX(100vw);
+            @include transition-ease;
+
+            &.open{
+                transform: translatex(0);
+            }
+
+            &.active > a {
+                color: $green;
+            }
+        }
+
+        &_link{
+            display: inline-block;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include transition-ease;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover{
+                color: $green;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4{
+    .menu-nav_item:nth-child(#{$i}){
+        transition-delay: ($i * 0.1s) + 0.15s;
+    }
+}
+
+@include media-md{
+    .myHeader{
+        position: relative;
+    }
+
+    .logo-div{
+        top: 0.2rem;
+        left: 2rem;
+        
+
+        img{
+            height: 95px;
+        }
+       
+    }
+    #logoName{
+        display: none;
+    }
+
+    .menu-btn{
+        visibility: hidden;
+    }
+
+    .nav{
+        visibility: visible;
+        //border-bottom: 10px solid $green2;
+        background: #fff;
+        height: 90px;
+        top: -0.7rem;
+        left: -1rem;
+
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+           // padding-right: 7rem;
+
+            &_item{
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link{
+                margin-top: 0.5rem;
+               // margin-bottom: 2rem;
+                text-transform: capitalize;
+                font-size: 1.3rem;
+                padding: 1rem;
+                color: $green2;
+                font-weight: 600;
+                letter-spacing: 1px;
+
+                &:hover{
+                    color: $green2;
+                    border-bottom: 2px solid $green2;
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+
+}
+
+@include media-lg{
+
+    #logoName{
+        display: none;
+    }
+
+}
+
+@include media-xl{
+
+    #logoName{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 8rem;
+        font-family: $header;
+        font-weight: 900;
+        color: $green3;
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+
+}
+

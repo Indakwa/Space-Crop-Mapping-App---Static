@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE CROP APPLICATION</title>
+    <script src="https://kit.fontawesome.com/314e866590.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="myHeader">
+        <div class="menu-btn">
+            <span class="menu-btn_hamburger"></span>
+        </div>
+
+        <nav class="nav">
+            <div class="logo-div" ><a href="../index.html"><img src="images/logo.png" alt=""></a></div>
+            <span id="logoName">SPACE CROP APPLICATION</span>
+            
+            <ui class="menu-nav">
+                <li class="menu-nav_item" active>
+                    <a href="about2.html" class="menu-nav_link">Research Chair</a>
+                </li>
+                <li class="menu-nav_item">
+                    <a href="team.html" class="menu-nav_link">Team Egerton</a>
+                </li>
+                <li class="menu-nav_item">
+                    <a href="register.html" class="menu-nav_link">Log Out</a>
+                </li>
+            </ui>
+        </nav>
+    </header>
+
+    <section class="mySection">
+        <div class="section1">
+            <h4>MAPPING CROP AREA</h4>
+            <img src="images/map2.jpeg" alt="">
+            <div class="text">
+                Lorem  loremque est iusto volupt ipsum dolor sit amet, consectetur adipisicing elit. Harum earum facere id.iusto volupt ipsum dolor sit amet, consectetu  Rem eius hic doloremque est iusto voluptatem reiciendis?
+            </div>
+            <div class="result">
+                <span id="txt">Area of Field Selected</span>
+                <span id="box">456 <span id="units">Ha</span></span>
+                <span id="save">
+                    <a href="save.html">
+                        <span id="saveText">Save</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="section2">
+
+            <div class="map">
+                <img src="images/kenya.jpg" alt="">
+            </div>
+
+            <form action="#">
+                <input type="text" placeholder="Search Places..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div class="icons">
+                <i class="fas fa-paperclip"></i>
+                <i class="fas fa-mouse-pointer"></i>
+                <i class="fas fa-search-plus"></i>
+                <i class="fas fa-search-minus"></i>
+                <i class="fas fa-paint-brush"></i>
+                <i class="fas fa-compass"></i>
+            </div>
+
+            <div class="settings">
+                <i class="fas fa-cog" onclick="dropdown()"></i>
+            </div>
+
+            <div class="myDropdown" id="dropdown">
+                <p  onclick="dropdown_2()">Mode</p>
+                <p onclick="dropdown_3()">View</p>
+            </div>
+            <div class="dropdown2" id="dropdown2">
+                <p>Dark</p>
+                <p>Light</p>
+            </div>
+            <div class="dropdown3" id="dropdown3">
+                <p>Satellite</p>
+                <p>Street</p>
+                <p>Outdoor</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-info">
+            <div class="div-one">
+                <h6>USEFUL LINKS</h6>
+                <a href="index.html">Home</a>
+                <a href="about2.html">Research Chair</a>
+                <a href="team.html">Team Egerton</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div class="div-one">
+                <h6>SOCIAL MEDIA</h6>
+                    <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+            </div>
+        </div>
+        <p>&copy; Copyright 2022 Egerton Space Crop</p>
+    </footer>
+
+    <script src="js/maps.js"></script>
+</body>
+</html>
